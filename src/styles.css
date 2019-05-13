@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+
+
+body{
+    margin:0;
+}
+
+.cal-month-view .cal-cell-top{
+    min-height: 62px !important;
+}
+ .cal-month-view .cal-day-cell{
+    min-height: 50px !important;
+}
+
+ .cal-month-view .cal-days{
+    border: 1px solid #e1e1e1 !important;
+    border-bottom: 0 !important;
+    width: 400px !important;
+}
+
+
+.cal-month-view .cal-day-cell.cal-today{
+    background: lightskyblue !important;
+}
+.cal-month-view .cal-day-cell.cal-today .cal-day-number{
+    font-size: 1.2em !important;
+}
+@media screen and (max-width: 470px) {
+    .cal-month-view .cal-days{
+        border: 1px solid #e1e1e1 !important;
+        border-bottom: 0 !important;
+        width: 310px !important;
+    }
+    
+}

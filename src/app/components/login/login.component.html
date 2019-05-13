@@ -1,0 +1,21 @@
+<mat-card  class="login">
+ <div [formGroup]="loginForm" fxLayout="column" fxFlex="100"  fxLayoutAlign="start" fxLayoutGap="30px">
+  <div fxLayout="row" fxLayoutGap="10px">
+    <img class="image" src="../../../assets/icons/man-user.png">
+    <div>
+      <mat-form-field class="example-full-width">
+        <input matInput formControlName="email" placeholder="Email">
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutGap="10px">
+    <img class="image" src="../../../assets/icons/lock.png">
+    <div>
+      <mat-form-field class="example-full-width">
+        <input type="password" matInput formControlName="password"  placeholder="Password">
+      </mat-form-field>
+    </div>
+  </div>
+  <button type="button" (click)="login(loginForm)" class="btn btn-primary">Login</button>
+</div>
+</mat-card>
